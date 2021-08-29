@@ -7,9 +7,16 @@ module.exports = {
     port: 8082,
   },
   plugins: [
+    // new ModuleFederationPlugin({
+    //   name: 'cart',
+    //   fileName: 'remoteEntry.js',
+    //   exposes: {
+    //     './CartShow': './src/index',
+    //   },
+    // }),
     new ModuleFederationPlugin({
       name: 'cart',
-      fileName: 'remoteEntry.js',
+      filename: 'remoteEntry.js',
       exposes: {
         './CartShow': './src/index',
       },
