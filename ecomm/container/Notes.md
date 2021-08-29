@@ -13,11 +13,11 @@
 
 - Remote:
   - 'name' in is important.
-  - 'fileName' can be anything, but usually it should be 'remoteEntry.js'
+  - 'filename' can be anything, but usually it should be 'remoteEntry.js'
 - Host: key-value pair inside remotes object
   - the key must match 'name' of the remote.
-  - the value consists of 'name', 'port', and 'fileName' from Remote
-    - format is like this: "_'name'_@http://localhost:_'port'_/_'fileName'_"
+  - the value consists of 'name', 'port', and 'filename' from Remote
+    - format is like this: "_'name'_@http://localhost:_'port'_/_'filename'_"
 
 ## bootstrap.js in Host(container)
 
