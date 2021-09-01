@@ -1,15 +1,21 @@
 import faker from 'faker';
 
-let products = '';
+// el will be html element
+// and inside funtion we will do what we want to do with that element
+const mount = (el) => {
+  let products = '';
 
-for (let i = 0; i < 5; i++) {
-  const name = faker.commerce.productName();
-  products += `<div>${name}</div>`;
-}
+  for (let i = 0; i < 5; i++) {
+    const name = faker.commerce.productName();
+    products += `<div>${name}</div>`;
+  }
 
-document.querySelector('#dev-products').innerHTML = products;
+  el.innerHTML = products;
+  // instead of this el.innerHTML we can do like other frameworks (like React, Vue, etc.)
+  // ReactDOM.render(<App />, el)
+};
 
-// ! Suppose (In Reality actually), different teams are responsible for different project 
+// ! Suppose (In Reality actually), different teams are responsible for different project
 // document.querySelector('#dev-products').innerHTML = products;
 // ? here, Remote project cannot control over Host project to have same id.
 
