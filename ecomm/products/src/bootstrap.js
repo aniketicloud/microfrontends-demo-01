@@ -40,6 +40,7 @@ if (process.env.NODE_ENV == 'development') {
 }
 
 /**
+ * Situation #2
  * We're running this file (Remote) in 'Development' or 'Production' through Host
  * NO GURANTEE that an element with an id of `dev-products` exists
  * WE DO NOT WANT to try to immediately render the app
