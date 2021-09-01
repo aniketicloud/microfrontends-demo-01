@@ -26,6 +26,18 @@ const mount = (el) => {
  * of id `dev-product`.
  * We want to immediately render our app into that element
  */
+if (process.env.NODE_ENV == 'development') {
+  // this element id should be unique so that not to conflict with Host elements
+  // e.g. #dev-products-dev-only
+  // and of course this id should match with Remote index.html
+  const el = document.querySelector('#dev-products');
+
+  // assuming our Host(container) doesn't have an element with `dev-products`
+  if (el) {
+    // we're probably running in isolation
+    mount(el);
+  }
+}
 
 /**
  * We're running this file (Remote) in 'Development' or 'Production' through Host
