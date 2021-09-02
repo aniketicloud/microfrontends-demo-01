@@ -45,3 +45,4 @@ if (process.env.NODE_ENV == 'development') {
  * NO GURANTEE that an element with an id of `dev-products` exists
  * WE DO NOT WANT to try to immediately render the app
  */
+export { mount };
