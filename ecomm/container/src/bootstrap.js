@@ -1,8 +1,12 @@
-import { mount } from 'products/ProductsIndex';
-import 'cart/CartShow';
+import { mount as productMount } from 'products/ProductsIndex';
+import { mount as cartMount } from 'cart/CartShow';
 
-console.log('Container .. !');
+console.log('Container/Host .. !');
 
-const el = document.querySelector('#my-products');
+// products
+const elmentProduct = document.querySelector('#my-products');
+productMount(elmentProduct);
 
-mount(el);
+// cart
+const elementCart = document.querySelector('#my-cart');
+cartMount(elementCart);
