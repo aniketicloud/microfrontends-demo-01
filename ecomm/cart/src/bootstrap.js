@@ -17,7 +17,7 @@ const mount = (el) => {
  * of id `dev-product`.
  * We want to immediately render our app into that element
  */
-if (process.env.NODE_ENV == 'development') {
+if (process.env.NODE_ENV === 'development') {
   const element = document.querySelector('#cart-dev');
   if (element) {
     mount(element);

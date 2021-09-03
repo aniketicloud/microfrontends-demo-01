@@ -26,7 +26,7 @@ const mount = (el) => {
  * of id `dev-product`.
  * We want to immediately render our app into that element
  */
-if (process.env.NODE_ENV == 'development') {
+if (process.env.NODE_ENV === 'development') {
   // this element id should be unique so that not to conflict with Host elements
   // e.g. #dev-products-dev-only
   // and of course this id should match with Remote index.html
